@@ -12,4 +12,4 @@ import Test.Spec.Reporter.TeamCity (teamcityReporter)
 main :: Effect Unit
 main = launchAff_ do
   specs <- discover """Test\..*"""
-  runSpec [consoleReporter, teamcityReporter] specs
+  runSpec [teamcityReporter] specs

@@ -12,7 +12,29 @@ to generate this file without the comments in this block.
 -}
 { name = "my-project"
 , dependencies =
-  [ "aff", "console", "effect", "prelude", "spec", "spec-discovery" ]
+  [ "aff"
+  , "arrays"
+  , "console"
+  , "debug"
+  , "effect"
+  , "either"
+  , "exceptions"
+  , "foldable-traversable"
+  , "gen"
+  , "language-cst-parser"
+  , "maybe"
+  , "newtype"
+  , "node-buffer"
+  , "node-fs"
+  , "node-fs-aff"
+  , "node-path"
+  , "node-process"
+  , "prelude"
+  , "spec"
+  , "spec-discovery"
+  , "strings"
+  , "tuples"
+  ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]
 }
